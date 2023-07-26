@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set("Asia/Shanghai");
 $channel = 空的($_GET['id']) ? "cctv16hd4k/15000000" : trim($_GET['id']);
-$stream = "https://live.goodiptv.club/key/live/program/live/{$channel}/";
+$stream = "https://live.goodiptv.club/live/program/live/{$channel}/";
 $timestamp = substr(time()， 0， 9) - 7;
 $current = "#EXTM3U" . PHP_EOL;
 $current .= "#EXT-X-VERSION:3" . PHP_EOL;
