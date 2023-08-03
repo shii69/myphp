@@ -1,8 +1,8 @@
 <?php
 date_default_timezone_set("Asia/Shanghai");
-$channel = 空的($_GET['id']) ? "cctv16hd4k/15000000" : trim($_GET['id']);
-$stream = "http://153.35.100.181/liveplay-kk.rtxapp.com/live/program/live/{$channel}/";
-$timestamp = substr(time()， 0， 9) - 7;
+$channel = empty($_GET['id']) ? "cctv16hd4k/15000000" : trim($_GET['id']);
+$stream = "http://http://153.35.100.181/liveplay-kk.rtxapp.com/live/program/live/{$channel}/";
+$timestamp = substr(time(), 0, 9) - 7;
 $current = "#EXTM3U" . PHP_EOL;
 $current .= "#EXT-X-VERSION:3" . PHP_EOL;
 $current .= "#EXT-X-TARGETDURATION:3" . PHP_EOL;
